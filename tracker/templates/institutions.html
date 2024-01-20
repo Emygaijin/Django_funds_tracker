@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    {% for x in data %}
+    <p><a href="{% url 'details' x.name %}">{{ x.name.upper }}</a></p>
+    {% endfor %}
+</div>
+{% endblock %}

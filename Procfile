@@ -1,0 +1,1 @@
+web gunicorn funds_tracker.wsgi:application --log-file -

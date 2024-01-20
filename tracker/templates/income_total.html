@@ -1,0 +1,9 @@
+<!-- templates/income_total.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="login">
+   <h2>Total Income Across All Institutions</h2>
+  <p>Total: {{ total_income|default:"N/A" }}</p>
+</div>
+{% endblock %}

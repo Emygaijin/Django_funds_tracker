@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container1" style="display: flex;">
+
+   <div class="inst_holder">
+       <div class="inst"><p>{{ data.institution }}</p></div>
+       <div class="img_wrapper"></div>
+       <div class="name"><p>{{ data.name }}</p></div>
+   </div>
+
+    <div class="info">
+        <table>
+        <tr>
+        <th class="th">INCOME FROM FIRS </th>
+            <th class="th"> N{{ data.income }}</th>
+        </tr>
+        </table>
+        <h2>EXPENDITURE</h2>
+        <table>
+        <tr>
+        <th class="th">INCOME FROM FIRS </th>
+            <th class="th"> N{{ data.income }}</th>
+        </tr>
+        </table>
+        <table>
+        <tr>
+        <th class="th">SALARY PAYMENT </th>
+            <th class="th">N{{ data.salary_payment }}</th>
+        </tr>
+        </table>
+        <table>
+        <tr>
+        <th class="th">VEHICLE PROCUREMENT</th>
+            <th class="th"> N{{ data.vehicle_procurement }}</th>
+        </tr>
+        </table>
+        <table>
+        <tr>
+        <th class="th">CONSTRUCTION</th>
+            <th class="th">N{{ data.construction }}</th>
+        </tr>
+        </table>
+        <table>
+        <tr>
+        <th class="th">TOTAL</th>
+            <th class="th">N{{ data.total }}</th>
+        </tr>
+        </table>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="login">
+    {% for institution in unique_institutions %}
+    <p><a href="{% url 'institution_total' institution.institution %}">{{ institution.institution }}</a></p>
+    {% endfor %}
+    <p><a href="{% url 'income_total' %}">TOTAL FUNDS DISBURSED TO ALL INSTITUTIONS</a></p>
+</div>
+
+{% endblock %}
